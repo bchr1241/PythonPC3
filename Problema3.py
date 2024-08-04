@@ -28,8 +28,8 @@ def main():
 
         except ValueError:
             print("Ingrese valores correctos")
-        except Exception:
-            print("Error inesperado. Favor de ingresar nuevamente los valores.")
+        #except Exception:
+        #    print("Error inesperado. Favor de ingresar nuevamente los valores.")
 
 if __name__ == "__main__":
     main()
