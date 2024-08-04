@@ -14,7 +14,7 @@ def main():
     while True:
         try:
             x = input("Ingrese el radio de un círculo para hallar su área: ")
-            y = input("Ingrese el radio de otro círculo para hallar su área: ")
+            y = input("Ingrese el radio de otro redondo para hallar su área: ")
 
             CIRCULO1 = CIRCULO(x)
             CIRCULO2 = CIRCULO(y)
@@ -28,9 +28,8 @@ def main():
 
         except ValueError:
             print("Ingrese valores correctos")
-        #except Exception:
-        #    print("Error inesperado. Favor de ingresar nuevamente los valores.")
+        except Exception:
+            print("Error inesperado. Favor de ingresar nuevamente los valores.")
 
 if __name__ == "__main__":
     main()
-
