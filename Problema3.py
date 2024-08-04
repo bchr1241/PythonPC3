@@ -2,7 +2,7 @@ import math
 
 class CIRCULO:
     def __init__(self, radio):
-        self.radio = (radio)
+        self.radio = float(radio)
 
     def calculoarea(self):
         return math.pi * self.radio **2
