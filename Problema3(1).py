@@ -14,7 +14,7 @@ def main():
     while True:
         try:
             x = input("Ingrese el radio de un círculo para hallar su área: ")
-            y = input("Ingrese el radio de otro redondo para hallar su área: ")
+            y = input("Ingrese el radio de otro círculo para hallar su área: ")
 
             CIRCULO1 = CIRCULO(x)
             CIRCULO2 = CIRCULO(y)
