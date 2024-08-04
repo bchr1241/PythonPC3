@@ -2,7 +2,10 @@ import math
 
 class CIRCULO:
     def __init__(self, radio):
-        self.radio = float(radio)
+        try:
+            self.radio = float(radio)
+        except ValueError:
+            raise ValueError("El radio debe ser un número válido")
 
     def calculoarea(self):
         return math.pi * self.radio **2
@@ -24,7 +27,7 @@ def main():
             break
 
         except ValueError:
-            print("Favor de ingresar un número válido para el radio")
+            print("Ingrese valores correctos")
         except Exception:
             print("Error inesperado. Favor de ingresar nuevamente los valores.")
 
